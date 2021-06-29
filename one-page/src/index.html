@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+  <title>One-Page | Анкета</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="stylesheet" href="./css/main.css" />
+  
+  <script type='text/javascript' src='/scripts/jquery/jquery-3.2.1.min.js'></script>
+  <script type='text/javascript' src="/scripts/ui/ui.js"></script>
+  
+</head>
+
+<body>
+
+<header class="header">
+   <nav class="menu">
+		<a class="menu__link menu__link-active" href="#personal">Личная информация</a>
+		<a class="menu__link" href="#exp">Опыт</a>
+		<a class="menu__link" href="#js-skills">JavaScript</a>
+		<a class="menu__link" href="#about">О себе </a>
+   </nav>
+   <div class="mobile-nav-toggler"></div>
+</header>
+   
+<div class="wrapper">
+   <form method="post">
+   
+   <h1>Анкета</h1>
+   
+   <section class="personal" id="personal">
+		<div class="personal__icon"></div>
+		<h2>Личная информация</h2>
+		
+		<div class="input-wrapper">
+			<input type="text" class="text-center filled" placeholder="ФИО" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'ФИО'" value="Усманов Искандер А." />
+			<span class="input-label">ФИО</span>
+		</div>
+		
+		<div class="select-wrapper">
+			<div class="select filled" id="years">
+				<div class="select-active-val"></div>
+				<div class="select-dropdown"></div>
+			</div>
+			<span class="input-label">Ваш возраст</span>
+		</div>
+
+		<div class="input-wrapper">
+			<input type="text" class="text-center filled" placeholder="Место проживания" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'Место проживания'" value="Москва" />
+			<span class="input-label">Место проживания</span>
+		</div>
+		
+		<div class="input-wrapper">
+			<input type="text" class="text-center" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'Skype'" placeholder="Skype" />
+			<span class="input-label">Skype</span>
+		</div>
+		
+		<div class="input-wrapper">
+			<input type="text" class="text-center filled" placeholder="Telegram" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'Telegram'" value="@Lisicinz" />
+			<span class="input-label">Telegram</span>
+		</div>
+		
+		<div class="input-wrapper">
+			<input type="email" class="text-center filled" placeholder="Email" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'Email'" value="iusmanov.frontend@gmail.com" />
+			<span class="input-label">Email</span>
+		</div>
+   </section>
+   
+   <section class="exp fadeinOnScroll" id="exp">
+		<div class="exp__icon"></div>
+		<h2>Расскажите о своём опыте</h2>
+		
+		<div class="about__checks">
+			<div>
+				<input id="check1" checked="checked" type="checkbox" />
+				<label for="check1">SCSS/LESS/STYLUS</label>
+			</div>
+			<div>
+				<input id="check2" checked="checked" type="checkbox" />
+				<label for="check2">GULP/Webpack</label>
+			</div>
+			<div>
+				<input id="check3" checked="checked" type="checkbox" />
+				<label for="check3">Git/BitBucket</label>
+			</div>
+			<div>
+				<input id="check4" checked="checked" type="checkbox" />
+				<label for="check4">CSS Animations</label>
+			</div>
+			<div>
+				<input id="check5" checked="checked" type="checkbox" />
+				<label for="check5">JavaScript</label>
+			</div>
+			<div>
+				<input id="check6" checked="checked" type="checkbox" />
+				<label for="check6">Figma</label>
+			</div>
+			<div>
+				<input id="check7" checked="checked" type="checkbox" />
+				<label for="check7">Photoshop</label>
+			</div>	
+			<div>
+				<input id="check8" checked="checked" type="checkbox" />
+				<label for="check8">Mobile-first</label>
+			</div>
+			<div>
+				<input id="check9" checked="checked" type="checkbox" />
+				<label for="check9">Pixel-perfect</label>
+			</div>
+			<div>
+				<input id="check10" checked="checked" type="checkbox" />
+				<label for="check10">Responsive</label>
+			</div>		
+
+			<div>
+				<input id="check11" checked="checked" type="checkbox" />
+				<label for="check11">NPM</label>
+			</div>
+			
+			<div>
+				<input id="check13" checked="checked" type="checkbox" />
+				<label for="check13">UI / UX</label>
+			</div>
+			
+			<div>
+				<input id="check12" checked="checked" type="checkbox" />
+				<label for="check12">Jira / Confluence</label>
+			</div>
+			
+			<div>
+				<input id="check14" checked="checked" type="checkbox" />
+				<label for="check14">SVG</label>
+			</div>
+			
+			<div>
+				<input id="check15" checked="checked" type="checkbox" />
+				<label for="check15">PUG</label>
+			</div>			
+			
+			<div>
+				<input id="check16" type="checkbox" />
+				<label for="check16">Something else...</label>
+			</div>		
+		</div>
+   </section>
+   
+   <section class="js-skills fadeinOnScroll" id="js-skills">
+		<div class="js-skills__icon"></div>
+		<h2>Уровень владения JavaScript</h2>
+		
+		<div class="js-skills__range range-75">
+			<div class="js-skills__range-controls">
+				<div class="js-skills__range-controls-item-1"><span>Не владею</span></div>
+				<div class="js-skills__range-controls-item-2"><span>Использую готовые решения</span></div>
+				<div class="js-skills__range-controls-item-3"><span>Использую готовые решения и умею закастомить под себя</span></div>
+				<div class="js-skills__range-controls-item-4"><span>Пишу сложный JS с нуля</span></div>
+			</div>
+			<div class="js-skills__range-graph"></div>
+		</div>
+   </section>
+   
+   <section class="about fadeinOnScroll" id="about">
+		<div class="about__icon"></div>
+		<h2>Расскажите о себе</h2>
+		
+		<div class="about__descr text-center">
+			Напишите несколько предложений, чем привлекла наша вакансия
+			и что вы ожидаете от работы у нас.
+		</div>
+		
+		<textarea placeholder="Понравилась тем, что..." 
+				  onfocus="this.placeholder = ''"
+				  onblur="this.placeholder = 'Понравилась тем, что...'">Посмотрел ваш сайт. Думаю, работа с вами — это много интересных и разнообразных задач. Люблю делать лендинги (:</textarea>
+		
+		<button type="submit" class="center">
+			<span>Готово</span>
+			<!-- need server -->
+			<? /* php if (isset($_POST)) {
+				var_dump($_POST);
+			} */ ?>
+		</button>
+   </section>
+   
+   </form>
+</div>
+
+</body>
+</html>
